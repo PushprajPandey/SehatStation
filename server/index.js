@@ -81,13 +81,20 @@ app.use(bodyParser.json());
 app.use(express.json());
 app.use(helmet());
 
-// Serve manifest.json as a public static file (no auth)
+
+// Make manifest.json public (no auth, no middleware)
 const path = require('path');
+app.use((req, res, next) => {
+  if (req.path === '/manifest.json') return next();
+  next();
+});
 app.use('/manifest.json', express.static(path.join(__dirname, '../client/public/manifest.json')));
 
+
 // Allow OPTIONS preflight for /auth/register (CORS)
+const FRONTEND_ORIGIN = 'https://sehat-station-83muwl77u-pushpraj-pandeys-projects.vercel.app';
 app.options('/auth/register', (req, res) => {
-  res.header('Access-Control-Allow-Origin', req.headers.origin || '*');
+  res.header('Access-Control-Allow-Origin', FRONTEND_ORIGIN);
   res.header('Access-Control-Allow-Methods', 'GET,POST,OPTIONS');
   res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, x-auth-token, Origin');
   res.header('Access-Control-Allow-Credentials', 'true');

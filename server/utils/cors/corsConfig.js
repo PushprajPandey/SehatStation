@@ -11,7 +11,7 @@ function corsConfig(app) {
     "http://localhost:3001",
     "http://localhost:8080", // Add localhost:8080 as it may be used in dev
     "http://localhost:8081", // Add localhost:8081 for backend dev
-    "https://sehat-station.vercel.app/", // <-- Add your deployed frontend Vercel URL
+    "https://sehat-station.vercel.app", // <-- Add your deployed frontend Vercel URL
   ];
 
   const corsOptions = {

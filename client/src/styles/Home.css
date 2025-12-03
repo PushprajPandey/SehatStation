@@ -1,0 +1,237 @@
+/* Home.css */
+
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #dbeafe, #ebf5ff);
+}
+
+.bg-image-section {
+  background-image: url('../../public/doctor.png');
+  background-repeat: no-repeat;
+  background-position: right 1000px;
+  /* Moves the image 20% from the top */
+  background-size: contain;
+  /* You can use contain or cover depending on how much space you want the image to take */
+}
+
+.data {
+  max-width: 100%;
+}
+
+/* --------- */
+/*Scrollbar   */
+/* --------- */
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px !important;
+  /* Force width */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e5e2eb !important;
+  /* Force track color */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #057ef5 !important;
+  /* Force handle color */
+  border-radius: 12px !important;
+  /* Force handle radius */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #014589 !important;
+  /* Force hover color */
+  border-radius: 12px !important;
+}
+
+/* Hero Section */
+.hero-section {
+  background-image: url('../../public/doctor.png');
+  /* Replace with actual image URL */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+  color: black;
+  justify-items: center;
+  height: 80vh;
+  background-color: aquamarine;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+.hero-button {
+  background-color: #ff0040;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #0056b3;
+}
+
+/* Features Section */
+.features-section {
+  background-color: lightcyan;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.features-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: lightgreen;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+}
+
+/* Reviews Section */
+.reviews-section {
+  background-color: lightcyan;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.reviews-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.review {
+  background-color: lightseagreen;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+.review p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.review span {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+
+  .hero-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .features-section h2 {
+    font-size: 2rem;
+  }
+
+  .card {
+    max-width: 90%;
+  }
+
+  .reviews-section h2 {
+    font-size: 2rem;
+  }
+
+  .review {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+
+  .features-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .cards,
+  .reviews {
+    flex-direction: column;
+  }
+
+  .card,
+  .review {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.box {
+  width: 250px;
+  height: 100px;
+  border-radius: 50px;
+  cursor: pointer;
+}

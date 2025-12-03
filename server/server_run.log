@@ -1,0 +1,14 @@
+﻿Profile Routes: [
+  '/',
+  '/:id',
+  '/',
+  '/:id',
+  '/:id',
+  '/profile',
+  '/profile/edit/:id',
+  '/profile/edit/:id',
+  '/profile/adddoctor',
+  '/doctors'
+]
+Server is running on http://localhost:8081
+Connected to Database Successfully

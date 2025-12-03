@@ -1,0 +1,129 @@
+/* src/styles/Navbar.css */
+
+.navbar {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  border-bottom: 1px solid rgba(229, 231, 235, 0.5);
+}
+
+.dark .navbar {
+  background: rgba(17, 24, 39, 0.8);
+  border-bottom: 1px solid rgba(55, 65, 81, 0.5);
+}
+
+.navbar-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo-image {
+  height: 40px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #4B5563;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.dark .nav-link {
+  color: #D1D5DB;
+}
+
+.nav-link:hover {
+  color: #3B82F6;
+  background: rgba(59, 130, 246, 0.1);
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.login-btn, .register-btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.login-btn {
+  color: #3B82F6;
+  background: transparent;
+  border: 2px solid #3B82F6;
+}
+
+.login-btn:hover {
+  background: rgba(59, 130, 246, 0.1);
+}
+
+.register-btn {
+  color: white;
+  background: linear-gradient(135deg, #3B82F6, #2563EB);
+  border: none;
+}
+
+.register-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .dark .nav-links.active {
+    background: rgba(17, 24, 39, 0.95);
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+@media (min-width: 400px) {
+    .login-btn,.register-btn{
+      padding: 4px 30px !important;
+    }
+}

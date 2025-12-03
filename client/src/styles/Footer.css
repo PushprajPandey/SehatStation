@@ -1,0 +1,173 @@
+.footer {
+  background-color: #2c2c2c;
+  color: white;
+  padding: 40px 0; /* Increased padding for better spacing */
+  text-align: justify;
+  font-family: Arial, sans-serif;
+}
+.dark .footer {
+  background: linear-gradient(90deg, #232a3a 0%, #1a2236 100%);
+  color: #ffe066;
+}
+
+.footer-sections {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 40px; /* Increased margin for better separation */
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px; /* Ensures columns don't get too small */
+  margin: 15px;
+}
+
+.footer-column h3 {
+  font-weight: bold;
+  font-size: 18px; /* Adjusted font size */
+  margin-bottom: 20px; /* Increased space below heading */
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 12px; /* Slightly increased space between list items */
+  font-size: 16px; /* Increased font size */
+}
+
+.footer-column ul li a {
+}
+.dark .footer-column ul li a {
+  color: #ffe066;
+}
+.dark .footer-column ul li a:hover {
+  color: #b6dbfc;
+}
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.follow-us .social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; /* Added space above social icons */
+}
+
+.social-icons li {
+  margin: 0 15px; /* Increased spacing between social icons */
+}
+
+/* Social icons styling */
+.social-icons img {
+  width: 30px; /* Increased icon size */
+  height: 30px;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Added smooth transition */
+}
+
+/* Social icon circular button */
+.social-icons a {
+  display: inline-block;
+  width: 50px; /* Size of the circle */
+  height: 50px;
+  border-radius: 50%; /* Makes the icon circular */
+  background-color: white; /* Background color for the circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Added smooth transition */
+}
+
+/* Hover effect for social icons */
+.social-icons a:hover {
+  background-color: #007bff;
+  transform: scale(1.2) rotate(360deg); /* Add scale and rotation animation */
+}
+
+.social-icons img:hover {
+  filter: brightness(0) invert(1); /* Change icon color on hover */
+}
+
+.disclaimer {
+  margin: 0 100px 40px 100px; /* Center disclaimer with more spacing */
+  font-size: 14px; /* Adjusted for readability */
+  line-height: 1.5;
+  text-align: center;
+}
+.dark .disclaimer {
+  color: #ffe066;
+}
+
+.disclaimer p {
+  margin: 10px 0; /* Increased margin between paragraphs */
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  padding-top: 20px; /* Increased padding */
+  font-size: 14px;
+  text-align: center;
+}
+.dark .footer-bottom {
+  border-top: 1px solid #ffe066;
+  color: #ffe066;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-sections {
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+
+  .footer-column {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .disclaimer {
+    margin: 40px; /* Center disclaimer with more spacing */
+    font-size: 14px; /* Adjusted for readability */
+    line-height: 1.5;
+    text-align: justify;
+  }
+  .social-icons {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  background-color: #0056b3;
+  transform: scale(1.1); /* Slight scaling on hover */
+}
+
+.scroll-to-top:focus {
+  outline: none;
+}

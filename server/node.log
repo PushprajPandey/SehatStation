@@ -1,0 +1,641 @@
+Profile Routes: [
+  '/',
+  '/:id',
+  '/',
+  '/:id',
+  '/:id',
+  '/profile',
+  '/profile/edit/:id',
+  '/profile/edit/:id',
+  '/profile/adddoctor',
+  '/doctors',
+  '/nurses'
+]
+Server is running on http://localhost:8081
+Connected to Database Successfully
+Heartbeat: server alive at 2025-12-02T17:35:27.683Z
+CORS check - Origin: undefined
+--- Incoming Auth Request ---
+Method: POST
+Path: /auth/register
+Headers: {
+  "user-agent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; Heartbeat: server alive at 2025-12-02T17:35:47.698Z
+Heartbeat: server alive at 2025-12-02T17:36:17.701Z
+Heartbeat: server alive at 2025-12-02T17:36:47.706Z
+Heartbeat: server alive at 2025-12-02T17:37:17.706Z
+Heartbeat: server alive at 2025-12-02T17:37:47.718Z
+Heartbeat: server alive at 2025-12-02T17:38:17.730Z
+Heartbeat: server alive at 2025-12-02T17:38:47.740Z
+Heartbeat: server alive at 2025-12-02T17:39:17.752Z
+Heartbeat: server alive at 2025-12-02T17:39:47.764Z
+Heartbeat: server alive at 2025-12-02T17:40:17.770Z
+Heartbeat: server alive at 2025-12-02T17:40:47.779Z
+Heartbeat: server alive at 2025-12-02T17:41:17.782Z
+Heartbeat: server alive at 2025-12-02T17:41:47.782Z
+Heartbeat: server alive at 2025-12-02T17:42:17.795Z
+Heartbeat: server alive at 2025-12-02T17:42:47.802Z
+Heartbeat: server alive at 2025-12-02T17:43:17.804Z
+Heartbeat: server alive at 2025-12-02T17:43:47.808Z
+Heartbeat: server alive at 2025-12-02T17:44:17.813Z
+Heartbeat: server alive at 2025-12-02T17:44:47.823Z
+Heartbeat: server alive at 2025-12-02T17:45:17.824Z
+Heartbeat: server alive at 2025-12-02T17:45:47.832Z
+Heartbeat: server alive at 2025-12-02T17:46:17.832Z
+Heartbeat: server alive at 2025-12-02T17:46:47.833Z
+Heartbeat: server alive at 2025-12-02T17:43:52.167Z
+Heartbeat: server alive at 2025-12-02T17:44:22.173Z
+Heartbeat: server alive at 2025-12-02T17:44:52.173Z
+Heartbeat: server alive at 2025-12-02T17:45:22.182Z
+Heartbeat: server alive at 2025-12-02T17:45:52.197Z
+Heartbeat: server alive at 2025-12-02T17:46:22.207Z
+Heartbeat: server alive at 2025-12-02T17:46:52.220Z
+Heartbeat: server alive at 2025-12-02T17:44:42.755Z
+Heartbeat: server alive at 2025-12-02T17:45:12.770Z
+Heartbeat: server alive at 2025-12-02T17:45:42.774Z
+Heartbeat: server alive at 2025-12-02T17:46:12.779Z
+Heartbeat: server alive at 2025-12-02T17:46:42.781Z
+Heartbeat: server alive at 2025-12-02T17:44:49.396Z
+Heartbeat: server alive at 2025-12-02T17:45:19.407Z
+Heartbeat: server alive at 2025-12-02T17:45:49.423Z
+Heartbeat: server alive at 2025-12-02T17:46:19.428Z
+Heartbeat: server alive at 2025-12-02T17:46:49.443Z
+Heartbeat: server alive at 2025-12-02T17:39:51.971Z
+Heartbeat: server alive at 2025-12-02T17:40:21.974Z
+Heartbeat: server alive at 2025-12-02T17:40:51.986Z
+Heartbeat: server alive at 2025-12-02T17:41:22.001Z
+Heartbeat: server alive at 2025-12-02T17:41:52.003Z
+Heartbeat: server alive at 2025-12-02T17:42:22.008Z
+Heartbeat: server alive at 2025-12-02T17:42:52.016Z
+Heartbeat: server alive at 2025-12-02T17:43:22.031Z
+Heartbeat: server alive at 2025-12-02T17:43:52.044Z
+Heartbeat: server alive at 2025-12-02T17:44:22.047Z
+Heartbeat: server alive at 2025-12-02T17:44:52.047Z
+Heartbeat: server alive at 2025-12-02T17:45:22.059Z
+Heartbeat: server alive at 2025-12-02T17:45:52.070Z
+Heartbeat: server alive at 2025-12-02T17:46:22.080Z
+Heartbeat: server alive at 2025-12-02T17:46:52.094Z
+lCode":"482001"}
+AuthController: trying quick postalCode lookup for 482001
+AuthController: quick postalCode lookup succeeded
+Geocode results count: 0
+Heartbeat: server alive at 2025-12-02T17:36:27.690Z
+Heartbeat: server alive at 2025-12-02T17:36:57.694Z
+Heartbeat: server alive at 2025-12-02T17:37:27.698Z
+Heartbeat: server alive at 2025-12-02T17:37:57.709Z
+Heartbeat: server alive at 2025-12-02T17:38:27.714Z
+CORS check - Origin: http://localhost:3000
+CORS check - Origin: http://localhost:3000
+--- Incoming Auth Request ---
+Method: POST
+Path: /auth/register
+Headers: {
+  "host": "localhost:8081",
+  "connection": "keep-alive",
+  "content-length": "347",
+  "sec-ch-ua-platform": "\"Windows\"",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+  "sec-ch-ua": "\"Chromium\";v=\"142\", \"Brave\";v=\"142\", \"Not_A Brand\";v=\"99\"",
+  "content-type": "application/json",
+  "sec-ch-ua-mobile": "?0",
+  "accept": "*/*",
+  "sec-gpc": "1",
+  "accept-language": "en-US,en;q=0.7",
+  "origin": "http://localhost:3000",
+  "sec-fetch-site": "same-site",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "referer": "http://localhost:3000/",
+  "accept-encoding": "gzip, deflate, br, zstd"
+}
+Body: {
+  "type": "hospital",
+  "name": "Sunil Pandey",
+  "phone": "8349243434",
+  "email": "sajones440@cspaus.com",
+  "password": "Ayush@vit1",
+  "confirmPassword": "Ayush@vit1",
+  "address": {
+    "street": "123",
+    "city": "Indore",
+    "state": "Madhya Pradesh",
+    "postalCode": "452001"
+  },
+  "gender": "",
+  "dob": "",
+  "medicalHistory": [],
+  "website": "",
+  "department": "cardiology",
+  "availableServices": [
+    "OPD"
+  ]
+}
+-----------------------------
+Register hospital address: {"street":"123","city":"Indore","state":"Madhya Pradesh","postalCode":"452001"}
+AuthController: trying quick postalCode lookup for 452001
+AuthController: quick postalCode lookup succeeded
+Geocode results count: 0
+CORS check - Origin: http://localhost:3000
+CORS check - Origin: http://localhost:3000
+--- Incoming Auth Request ---
+Method: POST
+Path: /auth/login
+Headers: {
+  "host": "localhost:8081",
+  "connection": "keep-alive",
+  "content-length": "75",
+  "sec-ch-ua-platform": "\"Windows\"",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+  "sec-ch-ua": "\"Chromium\";v=\"142\", \"Brave\";v=\"142\", \"Not_A Brand\";v=\"99\"",
+  "content-type": "application/json",
+  "sec-ch-ua-mobile": "?0",
+  "accept": "*/*",
+  "sec-gpc": "1",
+  "accept-language": "en-US,en;q=0.7",
+  "origin": "http://localhost:3000",
+  "sec-fetch-site": "same-site",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "referer": "http://localhost:3000/",
+  "accept-encoding": "gzip, deflate, br, zstd"
+}
+Body: {
+  "type": "hospital",
+  "email": "sajones440@cspaus.com",
+  "password": "Ayush@vit1"
+}
+-----------------------------
+Received Data: {
+  type: 'hospital',
+  email: 'sajones440@cspaus.com',
+  password: 'Ayush@vit1'
+}
+CORS check - Origin: http://localhost:3000
+CORS check - Origin: http://localhost:3000
+CORS check - Origin: http://localhost:3000
+--- Incoming Auth Request ---
+Method: GET
+Path: /auth/profile
+Headers: {
+  "host": "localhost:8081",
+  "connection": "keep-alive",
+  "x-auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjkyZjI0MTU5NGJhOWYxMmY4ODczMjkxIn0sImlhdCI6MTc2NDY5NzEyMywiZXhwIjoxNzY0OTU2MzIzfQ.zL0riFqX6q51UHDYHz9KcFjSZbeypqFA9kz7s_MpeWQ",
+  "sec-ch-ua-platform": "\"Windows\"",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+  "sec-ch-ua": "\"Chromium\";v=\"142\", \"Brave\";v=\"142\", \"Not_A Brand\";v=\"99\"",
+  "content-type": "application/json",
+  "sec-ch-ua-mobile": "?0",
+  "accept": "*/*",
+  "sec-gpc": "1",
+  "accept-language": "en-US,en;q=0.7",
+  "origin": "http://localhost:3000",
+  "sec-fetch-site": "same-site",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "referer": "http://localhost:3000/",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "if-none-match": "W/\"3c1-BO/J+C6GSinILUiy6VT8xj/wX4U\""
+}
+Body: {}
+-----------------------------
+Get profile request for user: 692f241594ba9f12f8873291
+Found hospital profile: new ObjectId('692f241594ba9f12f8873291')
+CORS check - Origin: http://localhost:3000
+--- Incoming Auth Request ---
+Method: GET
+Path: /auth/profile
+Headers: {
+  "host": "localhost:8081",
+  "connection": "keep-alive",
+  "x-auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjkyZjI0MTU5NGJhOWYxMmY4ODczMjkxIn0sImlhdCI6MTc2NDY5NzEyMywiZXhwIjoxNzY0OTU2MzIzfQ.zL0riFqX6q51UHDYHz9KcFjSZbeypqFA9kz7s_MpeWQ",
+  "sec-ch-ua-platform": "\"Windows\"",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+  "sec-ch-ua": "\"Chromium\";v=\"142\", \"Brave\";v=\"142\", \"Not_A Brand\";v=\"99\"",
+  "content-type": "application/json",
+  "sec-ch-ua-mobile": "?0",
+  "accept": "*/*",
+  "sec-gpc": "1",
+  "accept-language": "en-US,en;q=0.7",
+  "origin": "http://localhost:3000",
+  "sec-fetch-site": "same-site",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "referer": "http://localhost:3000/",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "if-none-match": "W/\"22e-9KqdILrRRQULX6h/Zo7VjpTRRBg\""
+}
+Body: {}
+-----------------------------
+Get profile request for user: 692f241594ba9f12f8873291
+Found hospital profile: new ObjectId('692f241594ba9f12f8873291')
+CORS check - Origin: http://localhost:3000
+--- Incoming Auth Request ---
+Method: GET
+Path: /auth/profile
+Headers: {
+  "host": "localhost:8081",
+  "connection": "keep-alive",
+  "x-auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjkyZjI0MTU5NGJhOWYxMmY4ODczMjkxIn0sImlhdCI6MTc2NDY5NzEyMywiZXhwIjoxNzY0OTU2MzIzfQ.zL0riFqX6q51UHDYHz9KcFjSZbeypqFA9kz7s_MpeWQ",
+  "sec-ch-ua-platform": "\"Windows\"",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+  "sec-ch-ua": "\"Chromium\";v=\"142\", \"Brave\";v=\"142\", \"Not_A Brand\";v=\"99\"",
+  "content-type": "application/json",
+  "sec-ch-ua-mobile": "?0",
+  "accept": "*/*",
+  "sec-gpc": "1",
+  "accept-language": "en-US,en;q=0.7",
+  "origin": "http://localhost:3000",
+  "sec-fetch-site": "same-site",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "referer": "http://localhost:3000/",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "if-none-match": "W/\"22e-9KqdILrRRQULX6h/Zo7VjpTRRBg\""
+}
+Body: {}
+-----------------------------
+Get profile request for user: 692f241594ba9f12f8873291
+Found hospital profile: new ObjectId('692f241594ba9f12f8873291')
+CORS check - Origin: http://localhost:3000
+--- Incoming Auth Request ---
+Method: GET
+Path: /auth/profile
+Headers: {
+  "host": "localhost:8081",
+  "connection": "keep-alive",
+  "x-auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjkyZjI0MTU5NGJhOWYxMmY4ODczMjkxIn0sImlhdCI6MTc2NDY5NzEyMywiZXhwIjoxNzY0OTU2MzIzfQ.zL0riFqX6q51UHDYHz9KcFjSZbeypqFA9kz7s_MpeWQ",
+  "sec-ch-ua-platform": "\"Windows\"",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+  "sec-ch-ua": "\"Chromium\";v=\"142\", \"Brave\";v=\"142\", \"Not_A Brand\";v=\"99\"",
+  "content-type": "application/json",
+  "sec-ch-ua-mobile": "?0",
+  "accept": "*/*",
+  "sec-gpc": "1",
+  "accept-language": "en-US,en;q=0.7",
+  "origin": "http://localhost:3000",
+  "sec-fetch-site": "same-site",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "referer": "http://localhost:3000/",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "if-none-match": "W/\"22e-9KqdILrRRQULX6h/Zo7VjpTRRBg\""
+}
+Body: {}
+-----------------------------
+Get profile request for user: 692f241594ba9f12f8873291
+Found hospital profile: new ObjectId('692f241594ba9f12f8873291')
+CORS check - Origin: http://localhost:3000
+CORS check - Origin: http://localhost:3000
+--- Incoming Auth Request ---
+Method: GET
+Path: /auth/profile
+Headers: {
+  "host": "localhost:8081",
+  "connection": "keep-alive",
+  "x-auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjkyZjI0MTU5NGJhOWYxMmY4ODczMjkxIn0sImlhdCI6MTc2NDY5NzEyMywiZXhwIjoxNzY0OTU2MzIzfQ.zL0riFqX6q51UHDYHz9KcFjSZbeypqFA9kz7s_MpeWQ",
+  "sec-ch-ua-platform": "\"Windows\"",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+  "sec-ch-ua": "\"Chromium\";v=\"142\", \"Brave\";v=\"142\", \"Not_A Brand\";v=\"99\"",
+  "content-type": "application/json",
+  "sec-ch-ua-mobile": "?0",
+  "accept": "*/*",
+  "sec-gpc": "1",
+  "accept-language": "en-US,en;q=0.7",
+  "origin": "http://localhost:3000",
+  "sec-fetch-site": "same-site",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "referer": "http://localhost:3000/",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "if-none-match": "W/\"22e-9KqdILrRRQULX6h/Zo7VjpTRRBg\""
+}
+Body: {}
+-----------------------------
+Get profile request for user: 692f241594ba9f12f8873291
+Found hospital profile: new ObjectId('692f241594ba9f12f8873291')
+Heartbeat: server alive at 2025-12-02T17:38:57.721Z
+CORS check - Origin: http://localhost:3000
+CORS check - Origin: http://localhost:3000
+CORS check - Origin: http://localhost:3000
+CORS check - Origin: http://localhost:3000
+--- Incoming Auth Request ---
+Method: GET
+Path: /auth/doctors
+Headers: {
+  "host": "localhost:8081",
+  "connection": "keep-alive",
+  "sec-ch-ua-platform": "\"Windows\"",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+  "sec-ch-ua": "\"Chromium\";v=\"142\", \"Brave\";v=\"142\", \"Not_A Brand\";v=\"99\"",
+  "content-type": "application/json",
+  "sec-ch-ua-mobile": "?0",
+  "accept": "*/*",
+  "sec-gpc": "1",
+  "accept-language": "en-US,en;q=0.7",
+  "origin": "http://localhost:3000",
+  "sec-fetch-site": "same-site",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "referer": "http://localhost:3000/",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "if-none-match": "W/\"280-QlXVyoTZ9SECEv7RpLveKrovVjo\""
+}
+Body: {}
+-----------------------------
+CORS check - Origin: http://localhost:3000
+--- Incoming Auth Request ---
+Method: GET
+Path: /auth/profile
+Headers: {
+  "host": "localhost:8081",
+  "connection": "keep-alive",
+  "x-auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjkyZjI0MTU5NGJhOWYxMmY4ODczMjkxIn0sImlhdCI6MTc2NDY5NzEyMywiZXhwIjoxNzY0OTU2MzIzfQ.zL0riFqX6q51UHDYHz9KcFjSZbeypqFA9kz7s_MpeWQ",
+  "sec-ch-ua-platform": "\"Windows\"",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+  "sec-ch-ua": "\"Chromium\";v=\"142\", \"Brave\";v=\"142\", \"Not_A Brand\";v=\"99\"",
+  "content-type": "application/json",
+  "sec-ch-ua-mobile": "?0",
+  "accept": "*/*",
+  "sec-gpc": "1",
+  "accept-language": "en-US,en;q=0.7",
+  "origin": "http://localhost:3000",
+  "sec-fetch-site": "same-site",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "referer": "http://localhost:3000/",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "if-none-match": "W/\"22e-9KqdILrRRQULX6h/Zo7VjpTRRBg\""
+}
+Body: {}
+-----------------------------
+Get profile request for user: 692f241594ba9f12f8873291
+CORS check - Origin: http://localhost:3000
+--- Incoming Auth Request ---
+Method: GET
+Path: /auth/doctors
+Headers: {
+  "host": "localhost:8081",
+  "connection": "keep-alive",
+  "sec-ch-ua-platform": "\"Windows\"",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+  "sec-ch-ua": "\"Chromium\";v=\"142\", \"Brave\";v=\"142\", \"Not_A Brand\";v=\"99\"",
+  "content-type": "application/json",
+  "sec-ch-ua-mobile": "?0",
+  "accept": "*/*",
+  "sec-gpc": "1",
+  "accept-language": "en-US,en;q=0.7",
+  "origin": "http://localhost:3000",
+  "sec-fetch-site": "same-site",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "referer": "http://localhost:3000/",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "if-none-match": "W/\"256-64HrIyNjD9x9uy6/Jhxl4HJlh1E\""
+}
+Body: {}
+-----------------------------
+Found hospital profile: new ObjectId('692f241594ba9f12f8873291')
+CORS check - Origin: http://localhost:3000
+--- Incoming Auth Request ---
+Method: GET
+Path: /auth/profile
+Headers: {
+  "host": "localhost:8081",
+  "connection": "keep-alive",
+  "x-auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjkyZjI0MTU5NGJhOWYxMmY4ODczMjkxIn0sImlhdCI6MTc2NDY5NzEyMywiZXhwIjoxNzY0OTU2MzIzfQ.zL0riFqX6q51UHDYHz9KcFjSZbeypqFA9kz7s_MpeWQ",
+  "sec-ch-ua-platform": "\"Windows\"",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+  "sec-ch-ua": "\"Chromium\";v=\"142\", \"Brave\";v=\"142\", \"Not_A Brand\";v=\"99\"",
+  "content-type": "application/json",
+  "sec-ch-ua-mobile": "?0",
+  "accept": "*/*",
+  "sec-gpc": "1",
+  "accept-language": "en-US,en;q=0.7",
+  "origin": "http://localhost:3000",
+  "sec-fetch-site": "same-site",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "referer": "http://localhost:3000/",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "if-none-match": "W/\"22e-9KqdILrRRQULX6h/Zo7VjpTRRBg\""
+}
+Body: {}
+-----------------------------
+Get profile request for user: 692f241594ba9f12f8873291
+Found hospital profile: new ObjectId('692f241594ba9f12f8873291')
+CORS check - Origin: http://localhost:3000
+CORS check - Origin: http://localhost:3000
+--- Incoming Auth Request ---
+Method: GET
+Path: /auth/profile
+Headers: {
+  "host": "localhost:8081",
+  "connection": "keep-alive",
+  "x-auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjkyZjI0MTU5NGJhOWYxMmY4ODczMjkxIn0sImlhdCI6MTc2NDY5NzEyMywiZXhwIjoxNzY0OTU2MzIzfQ.zL0riFqX6q51UHDYHz9KcFjSZbeypqFA9kz7s_MpeWQ",
+  "sec-ch-ua-platform": "\"Windows\"",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+  "sec-ch-ua": "\"Chromium\";v=\"142\", \"Brave\";v=\"142\", \"Not_A Brand\";v=\"99\"",
+  "content-type": "application/json",
+  "sec-ch-ua-mobile": "?0",
+  "accept": "*/*",
+  "sec-gpc": "1",
+  "accept-language": "en-US,en;q=0.7",
+  "origin": "http://localhost:3000",
+  "sec-fetch-site": "same-site",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "referer": "http://localhost:3000/",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "if-none-match": "W/\"22e-9KqdILrRRQULX6h/Zo7VjpTRRBg\""
+}
+Body: {}
+-----------------------------
+Get profile request for user: 692f241594ba9f12f8873291
+Found hospital profile: new ObjectId('692f241594ba9f12f8873291')
+CORS check - Origin: http://localhost:3000
+--- Incoming Auth Request ---
+Method: GET
+Path: /auth/profile
+Headers: {
+  "host": "localhost:8081",
+  "connection": "keep-alive",
+  "x-auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjkyZjI0MTU5NGJhOWYxMmY4ODczMjkxIn0sImlhdCI6MTc2NDY5NzEyMywiZXhwIjoxNzY0OTU2MzIzfQ.zL0riFqX6q51UHDYHz9KcFjSZbeypqFA9kz7s_MpeWQ",
+  "sec-ch-ua-platform": "\"Windows\"",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+  "sec-ch-ua": "\"Chromium\";v=\"142\", \"Brave\";v=\"142\", \"Not_A Brand\";v=\"99\"",
+  "content-type": "application/json",
+  "sec-ch-ua-mobile": "?0",
+  "accept": "*/*",
+  "sec-gpc": "1",
+  "accept-language": "en-US,en;q=0.7",
+  "origin": "http://localhost:3000",
+  "sec-fetch-site": "same-site",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "referer": "http://localhost:3000/",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "if-none-match": "W/\"22e-9KqdILrRRQULX6h/Zo7VjpTRRBg\""
+}
+Body: {}
+-----------------------------
+Get profile request for user: 692f241594ba9f12f8873291
+Found hospital profile: new ObjectId('692f241594ba9f12f8873291')
+CORS check - Origin: http://localhost:3000
+--- Incoming Auth Request ---
+Method: GET
+Path: /auth/profile
+Headers: {
+  "host": "localhost:8081",
+  "connection": "keep-alive",
+  "x-auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjkyZjI0MTU5NGJhOWYxMmY4ODczMjkxIn0sImlhdCI6MTc2NDY5NzEyMywiZXhwIjoxNzY0OTU2MzIzfQ.zL0riFqX6q51UHDYHz9KcFjSZbeypqFA9kz7s_MpeWQ",
+  "sec-ch-ua-platform": "\"Windows\"",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+  "sec-ch-ua": "\"Chromium\";v=\"142\", \"Brave\";v=\"142\", \"Not_A Brand\";v=\"99\"",
+  "content-type": "application/json",
+  "sec-ch-ua-mobile": "?0",
+  "accept": "*/*",
+  "sec-gpc": "1",
+  "accept-language": "en-US,en;q=0.7",
+  "origin": "http://localhost:3000",
+  "sec-fetch-site": "same-site",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "referer": "http://localhost:3000/",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "if-none-match": "W/\"22e-9KqdILrRRQULX6h/Zo7VjpTRRBg\""
+}
+Body: {}
+-----------------------------
+Get profile request for user: 692f241594ba9f12f8873291
+Found hospital profile: new ObjectId('692f241594ba9f12f8873291')
+CORS check - Origin: http://localhost:3000
+--- Incoming Auth Request ---
+Method: GET
+Path: /auth/profile
+Headers: {
+  "host": "localhost:8081",
+  "connection": "keep-alive",
+  "x-auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjkyZjI0MTU5NGJhOWYxMmY4ODczMjkxIn0sImlhdCI6MTc2NDY5NzEyMywiZXhwIjoxNzY0OTU2MzIzfQ.zL0riFqX6q51UHDYHz9KcFjSZbeypqFA9kz7s_MpeWQ",
+  "sec-ch-ua-platform": "\"Windows\"",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+  "sec-ch-ua": "\"Chromium\";v=\"142\", \"Brave\";v=\"142\", \"Not_A Brand\";v=\"99\"",
+  "content-type": "application/json",
+  "sec-ch-ua-mobile": "?0",
+  "accept": "*/*",
+  "sec-gpc": "1",
+  "accept-language": "en-US,en;q=0.7",
+  "origin": "http://localhost:3000",
+  "sec-fetch-site": "same-site",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "referer": "http://localhost:3000/",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "if-none-match": "W/\"22e-9KqdILrRRQULX6h/Zo7VjpTRRBg\""
+}
+Body: {}
+-----------------------------
+Get profile request for user: 692f241594ba9f12f8873291
+Found hospital profile: new ObjectId('692f241594ba9f12f8873291')
+Heartbeat: server alive at 2025-12-02T17:39:27.727Z
+CORS check - Origin: http://localhost:3000
+CORS check - Origin: http://localhost:3000
+--- Incoming Auth Request ---
+Method: POST
+Path: /auth/profile/adddoctor
+Headers: {
+  "host": "localhost:8081",
+  "connection": "keep-alive",
+  "content-length": "386",
+  "x-auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjkyZjI0MTU5NGJhOWYxMmY4ODczMjkxIn0sImlhdCI6MTc2NDY5NzEyMywiZXhwIjoxNzY0OTU2MzIzfQ.zL0riFqX6q51UHDYHz9KcFjSZbeypqFA9kz7s_MpeWQ",
+  "sec-ch-ua-platform": "\"Windows\"",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+  "sec-ch-ua": "\"Chromium\";v=\"142\", \"Brave\";v=\"142\", \"Not_A Brand\";v=\"99\"",
+  "content-type": "application/json",
+  "sec-ch-ua-mobile": "?0",
+  "accept": "*/*",
+  "sec-gpc": "1",
+  "accept-language": "en-US,en;q=0.7",
+  "origin": "http://localhost:3000",
+  "sec-fetch-site": "same-site",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "referer": "http://localhost:3000/",
+  "accept-encoding": "gzip, deflate, br, zstd"
+}
+Body: {
+  "id": "692f241594ba9f12f8873291",
+  "email": "sajones440@cspaus.com",
+  "doctor": {
+    "name": "Sunil Pandey",
+    "department": "Cardiology",
+    "phone": "7489690930",
+    "opdSchedule": {
+      "monday": "10:00 AM - 12:00 PM",
+      "tuesday": "10:00 AM - 12:00 PM",
+      "wednesday": "10:00 AM - 12:00 PM",
+      "thursday": "10:00 AM - 12:00 PM",
+      "friday": "10:00 AM - 12:00 PM",
+      "saturday": "10:00 AM - 12:00 PM",
+      "sunday": "10:00 AM - 12:00 PM"
+    }
+  }
+}
+-----------------------------
+Processing add doctor request for hospital ID: 692f241594ba9f12f8873291
+Doctor data received: {
+  "name": "Sunil Pandey",
+  "department": "Cardiology",
+  "phone": "7489690930",
+  "opdSchedule": {
+    "monday": "10:00 AM - 12:00 PM",
+    "tuesday": "10:00 AM - 12:00 PM",
+    "wednesday": "10:00 AM - 12:00 PM",
+    "thursday": "10:00 AM - 12:00 PM",
+    "friday": "10:00 AM - 12:00 PM",
+    "saturday": "10:00 AM - 12:00 PM",
+    "sunday": "10:00 AM - 12:00 PM"
+  }
+}
+Heartbeat: server alive at 2025-12-02T17:39:57.735Z
+CORS check - Origin: http://localhost:3000
+CORS check - Origin: http://localhost:3000
+--- Incoming Auth Request ---
+Method: GET
+Path: /auth/profile
+Headers: {
+  "host": "localhost:8081",
+  "connection": "keep-alive",
+  "x-auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjkyZjI0MTU5NGJhOWYxMmY4ODczMjkxIn0sImlhdCI6MTc2NDY5NzEyMywiZXhwIjoxNzY0OTU2MzIzfQ.zL0riFqX6q51UHDYHz9KcFjSZbeypqFA9kz7s_MpeWQ",
+  "sec-ch-ua-platform": "\"Windows\"",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+  "sec-ch-ua": "\"Chromium\";v=\"142\", \"Brave\";v=\"142\", \"Not_A Brand\";v=\"99\"",
+  "content-type": "application/json",
+  "sec-ch-ua-mobile": "?0",
+  "accept": "*/*",
+  "sec-gpc": "1",
+  "accept-language": "en-US,en;q=0.7",
+  "origin": "http://localhost:3000",
+  "sec-fetch-site": "same-site",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "referer": "http://localhost:3000/",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "if-none-match": "W/\"22e-9KqdILrRRQULX6h/Zo7VjpTRRBg\""
+}
+Body: {}
+-----------------------------
+Get profile request for user: 692f241594ba9f12f8873291
+Found hospital profile: new ObjectId('692f241594ba9f12f8873291')
+Heartbeat: server alive at 2025-12-02T17:40:27.737Z
+Heartbeat: server alive at 2025-12-02T17:40:57.737Z
+Heartbeat: server alive at 2025-12-02T17:41:27.740Z
+Heartbeat: server alive at 2025-12-02T17:41:57.744Z
+Heartbeat: server alive at 2025-12-02T17:42:27.749Z
+Heartbeat: server alive at 2025-12-02T17:42:57.751Z
+Heartbeat: server alive at 2025-12-02T17:43:27.756Z
+Heartbeat: server alive at 2025-12-02T17:43:57.757Z
+Heartbeat: server alive at 2025-12-02T17:44:27.757Z
+Heartbeat: server alive at 2025-12-02T17:44:57.767Z
+Heartbeat: server alive at 2025-12-02T17:45:27.766Z
+Heartbeat: server alive at 2025-12-02T17:45:57.766Z
+Heartbeat: server alive at 2025-12-02T17:46:27.782Z
+Heartbeat: server alive at 2025-12-02T17:46:57.783Z

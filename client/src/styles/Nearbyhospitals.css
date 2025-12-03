@@ -1,0 +1,108 @@
+.leaflet-routing-container {
+  display: none !important; /* Hide the entire routing container */
+}
+
+.leaflet-routing-alternatives-container {
+  display: none !important; /* Hide alternatives (if any) */
+}
+
+.leaflet-routing-collapse-btn {
+  display: none !important; /* Hide the collapse button */
+}
+
+.content-container {
+  margin-top: 100px;
+  padding: 20px;
+  background: linear-gradient(120deg, #e0e7ff 0%, #f8fafc 100%);
+  min-height: 100vh;
+}
+
+.location-info {
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 100%;
+  padding: 0 0.5rem;
+}
+
+.hospital-card {
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  margin-bottom: 1.2rem;
+  padding: 1.2rem 1rem;
+  transition:
+    box-shadow 0.2s,
+    transform 0.2s;
+  border: 1px solid #e5e7eb;
+}
+.hospital-card:hover {
+  box-shadow: 0 8px 32px rgba(37, 99, 235, 0.12);
+  transform: translateY(-2px) scale(1.01);
+  border-color: #2563eb;
+}
+
+.hospital-card .hospital-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 0.2rem;
+}
+.hospital-card .hospital-coords {
+  font-size: 0.95rem;
+  color: #64748b;
+}
+.hospital-card .hospital-distance {
+  font-size: 0.95rem;
+  color: #16a34a;
+  font-weight: 600;
+}
+.hospital-card .hospital-btns {
+  display: flex;
+  gap: 0.7rem;
+  margin-top: 0.8rem;
+}
+.hospital-card .hospital-btns button,
+.hospital-card .hospital-btns a {
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  transition:
+    background 0.2s,
+    color 0.2s;
+  cursor: pointer;
+}
+.hospital-card .hospital-btns button {
+  background: #2563eb;
+  color: #fff;
+}
+.hospital-card .hospital-btns button:hover {
+  background: #1d4ed8;
+}
+.hospital-card .hospital-btns a {
+  background: #16a34a;
+  color: #fff;
+  text-decoration: none;
+}
+.hospital-card .hospital-btns a:hover {
+  background: #15803d;
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    padding: 8px;
+  }
+  .hospital-card {
+    padding: 1rem 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hospital-card {
+    border-radius: 10px;
+    padding: 0.7rem 0.3rem;
+  }
+}

@@ -1,0 +1,120 @@
+MongoServerError: E11000 duplicate key error collection: test.hospitals index: email_1 dup key: { email: "pushprajpandey2022@vitbhopal.ac.in" }
+    at InsertOneOperation.handleOk (D:\Projects\MedSync\server\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at tryOperation (D:\Projects\MedSync\server\node_modules\mongoose\node_modules\mongodb\lib\operations\execute_operation.js:214:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async executeOperation (D:\Projects\MedSync\server\node_modules\mongoose\node_modules\mongodb\lib\operations\execute_operation.js:78:16)
+    at async Collection.insertOne (D:\Projects\MedSync\server\node_modules\mongoose\node_modules\mongodb\lib\collection.js:154:16) {
+  errorLabelSet: Set(0) {},
+  errorResponse: {
+    index: 0,
+    code: 11000,
+    errmsg: 'E11000 duplicate key error collection: test.hospitals index: email_1 dup key: { email: "pushprajpandey2022@vitbhopal.ac.in" }',
+    keyPattern: { email: 1 },
+    keyValue: { email: 'pushprajpandey2022@vitbhopal.ac.in' }
+  },
+  index: 0,
+  code: 11000,
+  keyPattern: { email: 1 },
+  keyValue: { email: 'pushprajpandey2022@vitbhopal.ac.in' }
+}
+Add doctor error: CastError: Cast to embedded failed for value "{
+  _id: '72e4f41d-0100-490c-8354-fc87dd13ec1a',
+  name: 'Sunil Pandey',
+  department: 'Cardiology',
+  phone: '7489690930',
+  opdSchedule: {
+    monday: '10:00 AM - 12:00 PM',
+    tuesday: '10:00 AM - 12:00 PM',
+    wednesday: '10:00 AM - 12:00 PM',
+    thursday: '10:00 AM - 12:00 PM',
+    friday: '10:00 AM - 12:00 PM',
+    saturday: '10:00 AM - 12:00 PM',
+    sunday: '10:00 AM - 12:00 PM'
+  }
+}" (type Object) at path "doctors" because of "CastError"
+    at SchemaDocumentArray.cast (D:\Projects\MedSync\server\node_modules\mongoose\lib\schema\documentArray.js:521:19)
+    at SchemaType.applySetters (D:\Projects\MedSync\server\node_modules\mongoose\lib\schemaType.js:1288:12)
+    at castUpdateVal (D:\Projects\MedSync\server\node_modules\mongoose\lib\helpers\query\castUpdate.js:582:22)
+    at walkUpdatePath (D:\Projects\MedSync\server\node_modules\mongoose\lib\helpers\query\castUpdate.js:317:26)
+    at castUpdate (D:\Projects\MedSync\server\node_modules\mongoose\lib\helpers\query\castUpdate.js:144:7)
+    at model.Query._castUpdate (D:\Projects\MedSync\server\node_modules\mongoose\lib\query.js:4874:10)
+    at model.Query._findOneAndUpdate (D:\Projects\MedSync\server\node_modules\mongoose\lib\query.js:3497:23)
+    at model.Query.exec (D:\Projects\MedSync\server\node_modules\mongoose\lib\query.js:4627:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async addDoctor (D:\Projects\MedSync\server\controllers\user\profileController.js:159:31) {
+  stringValue: '"{\n' +
+    "  _id: '72e4f41d-0100-490c-8354-fc87dd13ec1a',\n" +
+    "  name: 'Sunil Pandey',\n" +
+    "  department: 'Cardiology',\n" +
+    "  phone: '7489690930',\n" +
+    '  opdSchedule: {\n' +
+    "    monday: '10:00 AM - 12:00 PM',\n" +
+    "    tuesday: '10:00 AM - 12:00 PM',\n" +
+    "    wednesday: '10:00 AM - 12:00 PM',\n" +
+    "    thursday: '10:00 AM - 12:00 PM',\n" +
+    "    friday: '10:00 AM - 12:00 PM',\n" +
+    "    saturday: '10:00 AM - 12:00 PM',\n" +
+    "    sunday: '10:00 AM - 12:00 PM'\n" +
+    '  }\n' +
+    '}"',
+  messageFormat: undefined,
+  kind: 'embedded',
+  value: {
+    _id: '72e4f41d-0100-490c-8354-fc87dd13ec1a',
+    name: 'Sunil Pandey',
+    department: 'Cardiology',
+    phone: '7489690930',
+    opdSchedule: {
+      monday: '10:00 AM - 12:00 PM',
+      tuesday: '10:00 AM - 12:00 PM',
+      wednesday: '10:00 AM - 12:00 PM',
+      thursday: '10:00 AM - 12:00 PM',
+      friday: '10:00 AM - 12:00 PM',
+      saturday: '10:00 AM - 12:00 PM',
+      sunday: '10:00 AM - 12:00 PM'
+    }
+  },
+  path: 'doctors',
+  reason: CastError: Cast to ObjectId failed for value "72e4f41d-0100-490c-8354-fc87dd13ec1a" (type string) at path "_id" because of "BSONError"
+      at SchemaObjectId.cast (D:\Projects\MedSync\server\node_modules\mongoose\lib\schema\objectId.js:253:11)
+      at SchemaType.applySetters (D:\Projects\MedSync\server\node_modules\mongoose\lib\schemaType.js:1288:12)
+      at EmbeddedDocument.$set (D:\Projects\MedSync\server\node_modules\mongoose\lib\document.js:1442:22)
+      at EmbeddedDocument.$set (D:\Projects\MedSync\server\node_modules\mongoose\lib\document.js:1136:16)
+      at EmbeddedDocument.Document (D:\Projects\MedSync\server\node_modules\mongoose\lib\document.js:178:12)
+      at EmbeddedDocument.Subdocument (D:\Projects\MedSync\server\node_modules\mongoose\lib\types\subdocument.js:48:12)
+      at EmbeddedDocument.ArraySubdocument [as constructor] (D:\Projects\MedSync\server\node_modules\mongoose\lib\types\arraySubdocument.js:44:15)
+      at new EmbeddedDocument (D:\Projects\MedSync\server\node_modules\mongoose\lib\schema\documentArray.js:150:17)
+      at SchemaDocumentArray.cast (D:\Projects\MedSync\server\node_modules\mongoose\lib\schema\documentArray.js:515:22)
+      at SchemaType.applySetters (D:\Projects\MedSync\server\node_modules\mongoose\lib\schemaType.js:1288:12)
+      at castUpdateVal (D:\Projects\MedSync\server\node_modules\mongoose\lib\helpers\query\castUpdate.js:582:22)
+      at walkUpdatePath (D:\Projects\MedSync\server\node_modules\mongoose\lib\helpers\query\castUpdate.js:317:26)
+      at castUpdate (D:\Projects\MedSync\server\node_modules\mongoose\lib\helpers\query\castUpdate.js:144:7)
+      at model.Query._castUpdate (D:\Projects\MedSync\server\node_modules\mongoose\lib\query.js:4874:10)
+      at model.Query._findOneAndUpdate (D:\Projects\MedSync\server\node_modules\mongoose\lib\query.js:3497:23)
+      at model.Query.exec (D:\Projects\MedSync\server\node_modules\mongoose\lib\query.js:4627:80) {
+    stringValue: '"72e4f41d-0100-490c-8354-fc87dd13ec1a"',
+    messageFormat: undefined,
+    kind: 'ObjectId',
+    value: '72e4f41d-0100-490c-8354-fc87dd13ec1a',
+    path: '_id',
+    reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+        at new ObjectId (D:\Projects\MedSync\server\node_modules\bson\lib\bson.cjs:2538:23)
+        at castObjectId (D:\Projects\MedSync\server\node_modules\mongoose\lib\cast\objectid.js:25:12)
+        at SchemaObjectId.cast (D:\Projects\MedSync\server\node_modules\mongoose\lib\schema\objectId.js:251:12)
+        at SchemaType.applySetters (D:\Projects\MedSync\server\node_modules\mongoose\lib\schemaType.js:1288:12)
+        at EmbeddedDocument.$set (D:\Projects\MedSync\server\node_modules\mongoose\lib\document.js:1442:22)
+        at EmbeddedDocument.$set (D:\Projects\MedSync\server\node_modules\mongoose\lib\document.js:1136:16)
+        at EmbeddedDocument.Document (D:\Projects\MedSync\server\node_modules\mongoose\lib\document.js:178:12)
+        at EmbeddedDocument.Subdocument (D:\Projects\MedSync\server\node_modules\mongoose\lib\types\subdocument.js:48:12)
+        at EmbeddedDocument.ArraySubdocument [as constructor] (D:\Projects\MedSync\server\node_modules\mongoose\lib\types\arraySubdocument.js:44:15)
+        at new EmbeddedDocument (D:\Projects\MedSync\server\node_modules\mongoose\lib\schema\documentArray.js:150:17)
+        at SchemaDocumentArray.cast (D:\Projects\MedSync\server\node_modules\mongoose\lib\schema\documentArray.js:515:22)
+        at SchemaType.applySetters (D:\Projects\MedSync\server\node_modules\mongoose\lib\schemaType.js:1288:12)
+        at castUpdateVal (D:\Projects\MedSync\server\node_modules\mongoose\lib\helpers\query\castUpdate.js:582:22)
+        at walkUpdatePath (D:\Projects\MedSync\server\node_modules\mongoose\lib\helpers\query\castUpdate.js:317:26)
+        at castUpdate (D:\Projects\MedSync\server\node_modules\mongoose\lib\helpers\query\castUpdate.js:144:7)
+        at model.Query._castUpdate (D:\Projects\MedSync\server\node_modules\mongoose\lib\query.js:4874:10),
+    valueType: 'string'
+  },
+  valueType: 'Object'
+}

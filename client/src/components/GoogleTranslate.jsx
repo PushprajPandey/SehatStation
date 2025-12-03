@@ -1,0 +1,142 @@
+import React, { useEffect } from 'react';
+
+const GoogleTranslate = () => {
+  useEffect(() => {
+    // Only load Google Translate script in production (not on localhost)
+    const loadGoogleTranslateScript = () => {
+      const host = window.location.hostname;
+      if (host === 'localhost' || host === '127.0.0.1') {
+        // Skip loading during local development to avoid third-party certificate/network issues
+        console.info('Skipping Google Translate script in development');
+        return;
+      }
+      if (!document.getElementById('google_translate_script')) {
+        const script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src =
+          'https://translate.google.com/translate_a/element.js?cb=googleTranslateInit';
+        script.id = 'google_translate_script';
+        script.onerror = () => console.error('Error loading Google Translate script');
+        document.body.appendChild(script);
+      }
+    };
+
+    const initializeGoogleTranslate = () => {
+      if (window.google && window.google.translate) {
+        new window.google.translate.TranslateElement(
+          {
+            pageLanguage: 'en',
+            includedLanguages:
+              'en,hi,pa,sa,mr,ur,bn,es,ja,ko,zh-CN,nl,fr,de,it,ta,te',
+            layout:
+              window.google.translate.TranslateElement.InlineLayout.HORIZONTAL,
+            defaultLanguage: 'en',
+            autoDisplay: false,
+          },
+          'google_element',
+        );
+      } else {
+        console.error('Google Translate API is not available yet.');
+      }
+    };
+
+    // Define the callback function to initialize Google Translate
+    window.googleTranslateInit = () => {
+      initializeGoogleTranslate();
+    };
+
+    loadGoogleTranslateScript();
+
+    return () => {
+      // Cleanup logic if necessary
+      delete window.googleTranslateInit; // Clean up the callback
+    };
+  }, []);
+
+  return (
+    <div
+      id="google_element"
+      className="google-translate-container pl-20 md:pl-0"
+    >
+      <style>
+        {`
+          .goog-te-combo {
+            display: inline-block;
+            background-color: #e0f2ff; /* Light blue background */
+            border: 2px solid #0056b3; /* Dark blue border */
+            border-radius: 0.5rem; /* Slightly more rounded */
+            padding: 0.2rem 0.5rem; /* Tailwind: p-2 */
+            font-size: 0.675rem; /* Tailwind: text-sm */
+            transition: all 0.3s ease; /* Smooth transition */
+            outline: none;
+            color: #000; /* Black text */
+            font-weight: 500; /* Tailwind: font-medium */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Slight shadow */
+          }
+
+          .goog-te-combo:hover {
+            background-color: #b3e0ff; /* Lighter blue on hover */
+            border-color: #004494; /* Darker blue on hover */
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25); /* Stronger shadow on hover */
+          }
+
+          .goog-logo-link {
+            display: none !important;
+          }
+
+          .goog-te-gadget {
+            color: transparent !important;
+          }
+
+          .goog-te-gadget > span > a {
+            display: none !important;
+          }
+
+          .goog-te-gadget .goog-te-combo {
+            color: #0056b3 !important; /* Dark blue text */
+          }
+
+          #google_translate_element
+            .goog-te-gadget-simple
+            .goog-te-menu-value
+            span:first-child {
+            display: none;
+          }
+
+          #google_translate_element
+            .goog-te-gadget-simple
+            .goog-te-menu-value:before {
+            content: 'Translate'; /* Change the default text */
+            color: #0056b3; /* Dark blue text */
+          }
+
+          .goog-te-banner-frame {
+            display: none !important;
+          }
+
+          .goog-te-menu-frame {
+            max-height: 400px !important;
+            overflow-y: auto !important;
+            background-color: #fff; /* White background for dropdown */
+            border: 1px solid #cce5ff; /* Light blue border */
+            border-radius: 0.5rem; /* Slightly more rounded */
+          }
+
+          /* Hide the banner frame */
+          .goog-te-banner-frame {
+            display: none !important;
+          }
+
+          /* Customize the iframe */
+          .skiptranslate > iframe {
+            height: 0 !important;
+            border-style: none;
+            box-shadow: none;
+          }
+        `}
+      </style>
+    </div>
+  );
+};
+
+export default GoogleTranslate;

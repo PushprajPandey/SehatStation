@@ -1,6 +1,6 @@
 const express = require("express");
 const User = require("./models/user");
-const helmet = require('helmet'); 
+const helmet = require("helmet");
 
 const bodyParser = require("body-parser");
 const session = require("express-session");
@@ -22,36 +22,36 @@ const {
 require("dotenv").config();
 
 // Diagnostic listeners to capture unexpected exits
-process.on('exit', (code) => {
+process.on("exit", (code) => {
   console.log(`Process exiting with code: ${code}`);
 });
-process.on('uncaughtException', (err) => {
-  console.error('Uncaught Exception:', err);
+process.on("uncaughtException", (err) => {
+  console.error("Uncaught Exception:", err);
 });
-process.on('unhandledRejection', (reason, promise) => {
-  console.error('Unhandled Rejection at:', promise, 'reason:', reason);
+process.on("unhandledRejection", (reason, promise) => {
+  console.error("Unhandled Rejection at:", promise, "reason:", reason);
 });
 
 // Additional signal handlers to capture external termination signals
-process.on('SIGINT', () => {
-  console.log('Received SIGINT (Ctrl+C) - ignoring for now (debug mode)');
+process.on("SIGINT", () => {
+  console.log("Received SIGINT (Ctrl+C) - ignoring for now (debug mode)");
   // Intentionally do not exit so we can debug why SIGINT was sent.
 });
-process.on('SIGTERM', () => {
-  console.log('Received SIGTERM - ignoring for now (debug mode)');
+process.on("SIGTERM", () => {
+  console.log("Received SIGTERM - ignoring for now (debug mode)");
   // Intentionally do not exit so we can capture diagnostics
 });
-process.on('beforeExit', (code) => {
-  console.log('Process beforeExit event with code:', code);
+process.on("beforeExit", (code) => {
+  console.log("Process beforeExit event with code:", code);
 });
-process.on('message', (msg) => {
-  console.log('Process message event:', msg);
+process.on("message", (msg) => {
+  console.log("Process message event:", msg);
 });
 
 // Heartbeat to keep the event loop busy and provide periodic diagnostics
 setInterval(() => {
   try {
-    console.log('Heartbeat: server alive at', new Date().toISOString());
+    console.log("Heartbeat: server alive at", new Date().toISOString());
   } catch (e) {
     // swallow
   }
@@ -75,46 +75,61 @@ const port = process.env.PORT || 8081;
 // Enable CORS
 corsConfig(app);
 
-
 // Body Parser Middleware
 app.use(bodyParser.json());
 app.use(express.json());
 app.use(helmet());
 
-
 // Make manifest.json public (no auth, no middleware)
-const path = require('path');
+const path = require("path");
 app.use((req, res, next) => {
-  if (req.path === '/manifest.json') return next();
+  if (req.path === "/manifest.json") return next();
   next();
 });
-app.use('/manifest.json', express.static(path.join(__dirname, '../client/public/manifest.json')));
-
+app.use(
+  "/manifest.json",
+  express.static(path.join(__dirname, "../client/public/manifest.json"))
+);
 
 // Allow OPTIONS preflight for /auth/register (CORS)
-const FRONTEND_ORIGIN = 'https://sehat-station-83muwl77u-pushpraj-pandeys-projects.vercel.app';
-app.options('/auth/register', (req, res) => {
-  res.header('Access-Control-Allow-Origin', FRONTEND_ORIGIN);
-  res.header('Access-Control-Allow-Methods', 'GET,POST,OPTIONS');
-  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, x-auth-token, Origin');
-  res.header('Access-Control-Allow-Credentials', 'true');
+// Note: CORS is already handled by corsConfig middleware, this is redundant but kept for explicit handling
+app.options("/auth/register", (req, res) => {
+  const origin = req.headers.origin;
+  const allowedOrigins = [
+    "https://sehat-station.vercel.app",
+    "https://sehat-station-83muwl77u-pushpraj-pandeys-projects.vercel.app",
+    "http://localhost:3000",
+    "http://localhost:3001",
+    "http://localhost:8080",
+    "http://localhost:8081",
+  ];
+
+  if (origin && allowedOrigins.includes(origin)) {
+    res.header("Access-Control-Allow-Origin", origin);
+  }
+  res.header("Access-Control-Allow-Methods", "GET,POST,OPTIONS");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Content-Type, Authorization, x-auth-token, Origin"
+  );
+  res.header("Access-Control-Allow-Credentials", "true");
   return res.sendStatus(200);
 });
 
 // Request logging middleware for debugging (logs headers and body for auth routes)
 app.use((req, res, next) => {
   try {
-    if (req.path && req.path.startsWith('/auth')) {
-      console.log('--- Incoming Auth Request ---');
-      console.log('Method:', req.method);
-      console.log('Path:', req.path);
-      console.log('Headers:', JSON.stringify(req.headers, null, 2));
+    if (req.path && req.path.startsWith("/auth")) {
+      console.log("--- Incoming Auth Request ---");
+      console.log("Method:", req.method);
+      console.log("Path:", req.path);
+      console.log("Headers:", JSON.stringify(req.headers, null, 2));
       // body-parser has already run, so req.body should be available
-      console.log('Body:', JSON.stringify(req.body, null, 2));
-      console.log('-----------------------------');
+      console.log("Body:", JSON.stringify(req.body, null, 2));
+      console.log("-----------------------------");
     }
   } catch (err) {
-    console.error('Error in logging middleware:', err);
+    console.error("Error in logging middleware:", err);
   }
   next();
 });
@@ -241,14 +256,20 @@ app.get("/metrics", async (_, res) => {
 app.use("/auth", authRouter);
 
 // See all routes in profileRouter
-console.log("Profile Routes:", profileRouter.stack.map(layer => layer.route?.path).filter(Boolean));
+console.log(
+  "Profile Routes:",
+  profileRouter.stack.map((layer) => layer.route?.path).filter(Boolean)
+);
 
 // User Profile Routes - separate each route for clarity
 app.use("/auth", profileRouter);
 
 // Direct route for add doctor to ensure it works
 app.post("/auth/profile/adddoctor", authenticateToken, (req, res) => {
-  console.log("Add doctor direct route hit - Request body:", JSON.stringify(req.body));
+  console.log(
+    "Add doctor direct route hit - Request body:",
+    JSON.stringify(req.body)
+  );
   console.log("User from token:", req.user);
   require("./controllers/user/profileController").addDoctor(req, res);
 });
@@ -260,7 +281,7 @@ app.use("/hospitalapi", hospitalRouter);
 app.use("/hospitalapi", appointmentRouter);
 
 // other routes
-app.use("/otherroutes", otherroutes)
+app.use("/otherroutes", otherroutes);
 // Start the Server
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
